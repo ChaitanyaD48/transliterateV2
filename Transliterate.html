@@ -10,11 +10,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
     
      <section class="header">
         <nav>
-            <div class="nav-links">
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">GUIDE</a></li>
@@ -23,6 +26,7 @@
                     <li><a href="">CONTACT US</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -30,8 +34,10 @@
             <h3>Innovating Remote Learning </h3>
             
             <a href="" class="hero-btn">Translate Now</a>
-            <p>Transliterate helps you to enhance your Online Remote Learning experience with its wide range of features. <br>
-                Transliterate Helps you to Translate and Transcribe your study material including Audio, Video Lectures and lecture notes into 100+ Languages spoken all over the Globe including major languages like Hindi, Marathi, Japanese, Spanish, Greek, German  and many more....</p>
+            <p>
+                Transliterate helps you to enhance your Online Remote Learning experience with its wide range of features. <br>
+                Transliterate Helps you to Translate and Transcribe your study material including Audio, Video Lectures and lecture notes into 100+ Languages spoken all over the Globe including major languages like Hindi, Marathi, Japanese, Spanish, Greek, German  and many more....
+            </p>
         </div>
 
      </section>
@@ -62,7 +68,32 @@
 
      </section>
 
+<!-----------JavaScript for Toggle menu - Stackoverflow---------->
+<script>
 
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque eligendi,<br> rem iure sequi sint cupiditate voluptatem corporis eos eaque magni? Aperiam, nihil tenetur tempore nam quidem et unde nulla.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+    
+</section>
 
 </body>
 </html>
